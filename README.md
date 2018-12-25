@@ -12,3 +12,8 @@ A shopping list app created using the MERN Stack
 3. `npm install -D nodemon`
 With `nodemon` you don't have to restart the server every time you make a chage
 `-D` is used since nodemon is a dev dependency and is not needed in any public releases
+
+4. Create a MongoDB database at mlab.com and add a new database user. Create a config folder with a keys.js file and export your 
+database URI as a Javascript object.
+
+5. Start the server using `npm run server`
