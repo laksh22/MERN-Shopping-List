@@ -35,3 +35,8 @@ database URI as a Javascript object.
 1. `cd` into the `client` folder.
 
 2. `npm install bootstrap reactstrap uuid react-transition-group`
+
+##To add Redux
+1. `cd` into the `client` folder.
+
+2. `npm install redux react-redux redux-thunk`
