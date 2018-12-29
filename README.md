@@ -1,43 +1,42 @@
-# MERN Shopping List
+# MERN-Shopping-List
 
-> Shopping list app built with the MERN stack along with Redux for state management, Reactstrap and react-transition-group.
+## To setup the backend
+A shopping list app created using the MERN Stack
 
-## Quick Start
+1. Use `npm init` to set up a new NPM package
 
-```bash
-# Install dependencies for server
-npm install
+2. `npm install express body-parser mongoose concurrently`
 
-# Install dependencies for client
-npm run client-install
+`express` is for the backend and creating routes
 
-# Run the client & server with concurrently
-npm run dev
+`body-parser` reads the body of an incoming request
 
-# Run the Express server only
-npm run server
+`mongoose` interacts with the MongoDB database
 
-# Run the React client only
-npm run client
+`concurrently` allows you to run multiple npm scripts at a time
 
-# Server runs on http://localhost:5000 and client on http://localhost:3000
-```
+3. `npm install -D nodemon`
+With `nodemon` you don't have to restart the server every time you make a chage
+`-D` is used since nodemon is a dev dependency and is not needed in any public releases
 
-## Deployment
+4. Create a MongoDB database at mlab.com and add a new database user. Create a config folder with a keys.js file and export your
+database URI as a Javascript object.
 
-There is a Heroku post build script so that you do not have to compile your React frontend manually, it is done on the server. Simply push to Heroku and it will build and load the client index.html page
+5. Start the server using `npm run server`
 
-## App Info
+## To add React
+1. `cd` into the `client` folder.
 
-### Author
+2. `npm install -g create-react-app`
 
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
+3. `create-react-app .`
 
-### Version
+## To add Bootstrap
+1. `cd` into the `client` folder.
 
-1.0.0
+2. `npm install bootstrap reactstrap uuid react-transition-group`
 
-### License
+##To add Redux
+1. `cd` into the `client` folder.
 
-This project is licensed under the MIT License
+2. `npm install redux react-redux redux-thunk`
