@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-
+import React, { Component } from 'react';
 import {
   Collapse,
   Navbar,
@@ -11,12 +10,11 @@ import {
   Container
 } from 'reactstrap';
 
-class AppNavbar extends Component{
+class AppNavbar extends Component {
   state = {
     isOpen: false
   };
 
-//We use arrow function so we don't have to bind the function
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
@@ -24,17 +22,17 @@ class AppNavbar extends Component{
   };
 
   render() {
-    return(
+    return (
       <div>
         <Navbar color="dark" dark expand="sm" className="mb-5">
           <Container>
             <NavbarBrand href="/">ShoppingList</NavbarBrand>
-            <NavbarToggler onClick={this.toggle}></NavbarToggler>
+            <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="https://github.com/laksh22">
-                    Github
+                  <NavLink href="https://github.com/bradtraversy/mern_shopping_list">
+                    Github Repo
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -43,7 +41,7 @@ class AppNavbar extends Component{
         </Navbar>
       </div>
     );
-  };
+  }
 }
 
 export default AppNavbar;
